@@ -1,0 +1,44 @@
+	#include<iostream>
+#include<string>
+#include<iomanip>
+using namespace std;
+class Xe{
+	private:
+		int maxe;
+		string loaixe;
+		int giovao;
+		int thoiGianDo;
+		double phiDoXe;
+		bool dangChiemCho;
+		public:
+			Xe();
+			Xe(int ma, const string&loai,int gio,int thoiLuong){
+			maxe=ma;
+			loaixe=loai;
+			giovao=gio;
+			thoiGianDo=thoiLuong;
+			dangChiemCho=true;
+			tinhPhiDoXe();
+		}
+		int laymaxe() const {
+		return maxe;
+		}
+		string layloaixe() const {
+		return loaixe;
+		}
+		int laygiovao() const {
+		return giovao;
+		}
+		int laythoigiando() const {
+		return thoiGianDo;
+		}
+		double layphidoxe() const{
+		return phiDoXe;
+		}
+		bool laydangchiemcho() const{
+		return dangChiemCho;
+		}
+		
+		
+		
+};
